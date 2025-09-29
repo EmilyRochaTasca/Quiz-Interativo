@@ -1,11 +1,26 @@
 .scoreBoard {
     text-align: center;
     padding: 20px;
-
-}
-
-.restartButton {
-    margin-top: 15px ;
+  }
+  
+  .result {
+    font-size: 1.2rem;
+    margin: 15px 0;
+  }
+  
+  .timeList {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .totalTime {
+    margin: 15px 0;
+    font-weight: bold;
+  }
+  
+  .restartButton {
+    margin-top: 15px;
     padding: 10px 20px;
     border: none;
     border-radius: 8px;
@@ -14,9 +29,9 @@
     font-size: 1rem;
     cursor: pointer;
     transition: 0.3s;
-}
-
-
-.restartButton:hover {
+  }
+  
+  .restartButton:hover {
     background-color: #1976d2;
   }
+  
