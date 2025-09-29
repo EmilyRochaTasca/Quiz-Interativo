@@ -1,11 +1,11 @@
-import './App.module.css'
+import styles from './App.module.css'   
+import Header from "./components/Header"
 
 function App() {
- 
   return (
-    <>
-      <h1>Quiz</h1>
-    </>
+    <div className={styles.container}>
+      <Header />
+    </div>
   )
 }
 
