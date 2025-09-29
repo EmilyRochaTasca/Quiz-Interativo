@@ -1,16 +1,95 @@
-# React + Vite
+🎯 Quiz Interativo em React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é um quiz interativo desenvolvido em React com Vite, utilizando CSS Modules para estilização. O objetivo é testar conhecimentos sobre React Hooks e boas práticas no desenvolvimento de componentes, além de medir o tempo de resposta de cada questão.
 
-Currently, two official plugins are available:
+🚀 Funcionalidades
+📌 Quiz com 10 questões e 5 alternativas (A, B, C, D, E).
+⏱️ Timer por questão – reinicia a cada nova pergunta.
+📝 Registro de resposta escolhida e tempo gasto.
+✅ Exibição de pontuação final, acertos e percentual de acertos.
+📊 ScoreBoard mostrando:
+    Questão respondida
+    Resposta do usuário
+    Resposta correta
+    Pontuação da questão
+    Tempo gasto
+    Destaque em verde (acertos) e vermelho (erros)
+    🔄 Botão Reiniciar Quiz para jogar novamente.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📂 Estrutura de Pastas:
+src/
+ ├─ components/
+ │   ├─ Header/
+ │   │   ├─ index.jsx
+ │   │   └─ Header.module.css
+ │   ├─ QuestionCard/
+ │   │   ├─ index.jsx
+ │   │   └─ QuestionCard.module.css
+ │   ├─ ScoreBoard/
+ │   │   ├─ index.jsx
+ │   │   └─ ScoreBoard.module.css
+ ├─ data/
+ │   └─ questions.js
+ ├─ App.jsx
+ ├─ App.module.css
+ ├─ main.jsx
 
-## React Compiler
+🧩 Componentes:
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔹 Header:
+    -> Exibe o título do quiz.
+   ->  Mostra questão atual / total.
+    -> Mostra timer da questão.
 
-## Expanding the ESLint configuration
+🔹 QuestionCard:
+    -> Exibe enunciado da questão.
+    -> Lista alternativas como botões clicáveis.
+    -> Registra resposta e avança para próxima questão.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔹 ScoreBoard:
+    -> Mostra resumo final com pontuação, tempo e percentual de acertos.
+    -> Lista todas as questões respondidas com destaque de acerto/erro.
+    -> Possui botão para reiniciar o quiz.
+
+📖 Tecnologias Utilizadas;
+    ->  ⚛️ React
+    ->    ⚡ Vite
+    ->    🎨 CSS Modules
+    ->    🕒 Manipulação de estado e tempo com useState e useEffect
+
+
+▶️ Como Rodar o Projeto:
+
+   1. Clone o repositório:
+        git clone https://github.com/seu-usuario/quiz-interativo.git
+        cd quiz-interativo
+
+    2. Instale as dependências:
+        npm install ou npm i 
+
+    3. Rode o servidor de desenvolvimento:
+        npm run dev
+
+    4. Abra no navegador:
+        http://localhost:5173
+    
+
+
+📊 Exemplo de Questão:
+    {
+  id: 1,
+  question: "Qual hook é usado para gerenciar estados em componentes funcionais?",
+  options: ["useEffect", "useState", "useProps", "useClass"],
+  answer: "useState",
+  points: 2
+}
+
+
+
+🎯 Objetivo Didático:
+    Este projeto foi desenvolvido para exercitar:
+     ->   useState e useEffect
+     ->   Passagem de props
+     ->   Organização por componentes
+    ->    Uso de CSS Modules
+    ->    Lógica de timer e estados no React
